@@ -1,0 +1,16 @@
+name: Automate Projects
+
+on: 
+  issues:
+    types: [opened]
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Automate projects
+      uses: takanabe/github-actions-automate-projects@v0.0.2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_TOKEN_TO_ADD_PROJECT }}
+        GITHUB_PROJECT_URL: https://github.com/YOUR_USERNAME/YOUR_REPO_NAME/projects/1
+        GITHUB_PROJECT_COLUMN_NAME: To Do
