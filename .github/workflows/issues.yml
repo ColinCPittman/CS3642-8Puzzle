@@ -13,4 +13,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_PERSONAL_TOKEN_TO_ADD_PROJECT }}
         GITHUB_PROJECT_URL: https://github.com/ColinCPittman/CS3642-8Puzzle.git
-        GITHUB_PROJECT_COLUMN_NAME: To Do
+        GITHUB_PROJECT_COLUMN_NAME: Todo
